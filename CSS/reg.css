@@ -1,0 +1,372 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  font-family: sans-serif;
+  overflow-x: hidden;
+}
+
+.header {
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  position: fixed;
+  height: 90px;
+  left: 0;
+  right: 0;
+  top: 0;
+  background-color: #fff;
+  z-index: 1;
+  display: flex;
+  justify-content: space-around;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+}
+
+.nav__middle-s a {
+  margin-right: 50px;
+  text-decoration: none;
+  color: #000;
+  font-size: 15px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.nav__middle-s {
+  margin-right: 180px;
+}
+
+.pop-p::after {
+  content: '';
+  border-bottom: 2px solid #ff5361;
+  width: 27px;
+  display: block;
+  margin: 5px auto;
+}
+
+.logo-img {
+  width: 140px;
+}
+
+.reg-btn {
+  background-color: #ff5361;
+  color: #fff;
+  padding: 10px 25px;
+  border-radius: 30px;
+  cursor: pointer;
+  text-decoration: none;
+  font-family: sans-serif;
+  font-size: 15px;
+}
+
+.ham {
+  display: none;
+  /* margin-top: 5px; */
+}
+
+.ham button {
+  width: 45px;
+  height: 9px;
+  display: block;
+  margin-top: 5px;
+  margin-right: 10px;
+  background-color: black;
+}
+
+#myForm {
+  padding-top: 120px;
+  margin: auto;
+  width: 50%;
+  margin-bottom: 200px;
+}
+
+.full-name p {
+  margin-right: 40px;
+}
+
+.birth p {
+  margin-right: 50px;
+}
+
+.phone p {
+  margin-right: 13px;
+}
+
+.guest p {
+  margin-right: 37px;
+}
+
+.checkout p {
+  margin-right: 15px;
+}
+
+#myForm > article {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.name-box > div {
+  display: flex;
+  flex-direction: column;
+  margin-right: 5px;
+}
+
+.name-box {
+  display: flex;
+}
+
+input {
+  font-size: 16px;
+  padding: 8px;
+}
+
+#fname {
+  width: 160px;
+}
+
+#agree {
+  margin-right: 8px;
+}
+
+#sign {
+  font-size: 16px;
+}
+
+.sign {
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.red {
+  color: red;
+}
+
+.t-c {
+  color: rgb(0, 130, 236);
+}
+
+.terms {
+  display: unset !important;
+  /* position: relative; */
+}
+
+/* .clear-btn {
+  display: block;
+  position: absolute;
+  right: 0;
+  bottom: -1;
+  color: #000;
+} */
+
+.signup-btn {
+  background-color: #ff5361;
+  color: #fff;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 20px;
+  margin-top: 30px;
+}
+
+.footer {
+  text-align: center;
+  margin: 20px;
+}
+
+@media (max-width: 920px) {
+  .logo-img {
+    width: 120px;
+  }
+
+  .nav__middle-s {
+    margin-right: 50px;
+  }
+  .nav__middle-s a {
+    font-size: 13px;
+    margin-right: 25px;
+  }
+  .nav__middle-s a:last-of-type {
+    margin-right: 0;
+  }
+
+  .reg-btn {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+
+  #myForm {
+    width: 80%;
+  }
+
+  #sign {
+    font-size: 14px;
+  }
+
+  .footer p {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 700px) {
+  .header {
+    justify-content: space-between;
+  }
+  .ham {
+    display: block;
+  }
+
+  .navbar.showMenu {
+    height: 225px;
+  }
+
+  .navbar {
+    background-color: #fff;
+    height: 0;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 88px;
+    transition: height 1s ease-in-out;
+    overflow: hidden;
+  }
+
+  .logo-img {
+    position: fixed;
+    top: 35px;
+    left: 5%;
+  }
+
+  .ham {
+    display: block;
+  }
+
+  .nav__middle-s {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    position: absolute;
+    right: -40px;
+    top: 25px;
+  }
+  .nav__middle-s a {
+    color: #000;
+    font-size: 14px;
+  }
+
+  .reg-btn {
+    position: absolute;
+    right: 14px;
+    top: 145px;
+    font-size: 14px;
+  }
+  .pop-p {
+    margin-bottom: -10px;
+  }
+
+  .pop-p::after {
+    transform: translate(-68px, -14px);
+    width: 20px;
+  }
+
+  #myForm {
+    width: 100%;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 100px;
+  }
+
+  #myForm > article {
+    display: unset;
+  }
+
+  .name-box {
+    display: block;
+  }
+
+  .full-name p {
+    margin-bottom: 10px;
+    font-size: 15px;
+  }
+
+  #myForm input[type='text'] {
+    width: 300px;
+    font-size: 14px;
+  }
+  #myForm input[type='date'] {
+    width: 300px;
+  }
+  #myForm input[type='month'] {
+    width: 300px;
+  }
+  #myForm input[type='tel'] {
+    width: 300px;
+  }
+  input[type='file'] {
+    font-size: 14px;
+  }
+  textarea {
+    width: 300px;
+    height: 200px;
+    font-size: 14px;
+  }
+  #myForm label {
+    margin-bottom: 20px;
+    font-size: 14px;
+  }
+  .birth p {
+    margin-bottom: 10px;
+    font-size: 15px;
+  }
+  .phone p {
+    margin-bottom: 10px;
+    font-size: 15px;
+  }
+  .guest p {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 15px;
+  }
+  .checkout p {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 15px;
+  }
+  .valid-id {
+    font-size: 14px;
+  }
+  .valid-face {
+    font-size: 14px;
+  }
+  #photo,
+  #photof {
+    margin-bottom: 20px;
+  }
+
+  #agree {
+    margin-right: 0;
+  }
+
+  .terms-c > label {
+    font-size: 12px !important;
+  }
+
+  .signup-btn {
+    font-size: 18px;
+    padding: 10px 20px;
+    display: block;
+  }
+
+  .footer p {
+    font-size: 14px;
+  }
+}

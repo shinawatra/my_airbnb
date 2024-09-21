@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Airbnb Registration Form</title>
+    <link rel="stylesheet" href="CSS/reg.css" />
+  </head>
+  <body>
+    <header class="header">
+      <a href="index.html"
+        ><img src="images/logo-red.png" class="logo-img"
+      /></a>
+
+      <nav class="navbar">
+        <div class="nav__middle-s">
+          <a href="house.html" class="pop-p">Popular Places</a>
+          <a href="#">Travel Outside</a>
+          <a href="#">Online Packages</a>
+        </div>
+        <a href="reg.html" class="reg-btn">Register Now</a>
+      </nav>
+      <div class="ham">
+        <button></button>
+        <button></button>
+        <button></button>
+      </div>
+    </header>
+
+    <form id="myForm">
+      <article class="full-name">
+        <p>Full Name<span class="red">&ast;</span></p>
+        <div class="name-box">
+          <div>
+            <input type="text" id="fname" required autofocus />
+            <label for="fname">First Name</label>
+          </div>
+
+          <div>
+            <input type="text" id="lname" required />
+            <label for="lname">Last Name</label>
+          </div>
+        </div>
+      </article>
+
+      <article class="birth">
+        <p>Birth Date</p>
+        <div class="name-box">
+          <div>
+            <input type="month" id="month" required />
+            <label for="month">Month</label>
+          </div>
+
+          <div>
+            <input type="date" id="date" required />
+            <label for="date">Day</label>
+          </div>
+
+          <div>
+            <input type="text" id="year" required />
+            <label for="year">Year</label>
+          </div>
+        </div>
+      </article>
+
+      <article class="phone">
+        <p>Phone Number<span class="red">&ast;</span></p>
+        <div class="name-box">
+          <input type="tel" id="phone" required />
+        </div>
+      </article>
+
+      <article class="guest">
+        <p>
+          Numbers Of <br />
+          Guests<span class="red">&ast;</span>
+        </p>
+        <div class="name-box">
+          <input type="text" id="guess" required />
+        </div>
+      </article>
+
+      <article class="checkout">
+        <p>Check Out Date</p>
+        <div class="name-box">
+          <div>
+            <input type="date" id="date" required />
+            <label for="date">Date</label>
+          </div>
+        </div>
+      </article>
+
+      <article class="upload">
+        <p class="valid-id">
+          Please upload a <br />
+          valid copy of your <br />
+          ID (Passport or <br />
+          Driving License)<span class="red">&ast;</span>
+        </p>
+        <div class="name-box">
+          <input type="file" id="photo" />
+        </div>
+      </article>
+
+      <article class="upload-to-face">
+        <p class="valid-face">
+          Please upload a <br />
+          photo of you <br />
+          holding your ID <br />
+          next to your face<span class="red">&ast;</span>
+        </p>
+        <div class="name-box">
+          <input type="file" id="photof" />
+        </div>
+      </article>
+
+      <article class="terms-c">
+        <input type="checkbox" id="agree" required />
+        <label for="agree"
+          >I agree to <span class="t-c">terms & condition</span> and the
+          policies displayed on Staybnb</label
+        >
+      </article>
+
+      <article class="terms">
+        <label for="sign" class="sign"
+          >Signature<span class="red">&ast;</span></label
+        >
+        <textarea id="sign" cols="80" rows="15" required></textarea>
+        <!-- <a href="#" class="clear-btn">clear</a> -->
+      </article>
+
+      <button class="signup-btn">Sign Up</button>
+    </form>
+
+    <hr class="footer-hr" />
+
+    <footer class="footer">
+      <p>
+        Copyright &copy; <span class="copyright-date"></span>, All Right
+        Reserved | Developed by Adeshina
+      </p>
+    </footer>
+
+    <script src="main.js"></script>
+  </body>
+</html>
